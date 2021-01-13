@@ -1,5 +1,5 @@
 //create
-exports.post = function(req, res) {
+exports.post = function(req, res) { //exportando apenas as functions
 
     /* ------------------------------ ESTRUTURA DE VALIDAÇÃO ------------------------------*/
     const keys = Object.keys(req.body)
@@ -12,6 +12,8 @@ exports.post = function(req, res) {
     // corpo da requisição POST por isso req.body
     return res.send(req.body)
 }
+
+
 //update
 
 //delete
