@@ -1,9 +1,16 @@
-{% extends "layout.njk" %}
+{% extends "layout.njk" %}    {# extendendo a formatação e estilização do layout para index #}
 
 {% block content %}
 
 <div class="card">
-    <section class="avatar" style="background: url(https://source.unsplash.com/collection/19035194/500x500) no-repeat  center / cover"></section>
+    <section 
+    
+    class="avatar" 
+    style="background: url(https://source.unsplash.com/collection/19035194/500x500) no-repeat  center / cover">
+    {# estilizando a bkgd img [no-repeat(não repetindo) center/cover (centralizada e cobrindo todo o box)] #}
+    {# Consumindo a API do unsplash para mudar as fotos da página #}
+    </section>
+    
     <section class="details">
 
         <h3>Detalhes</h3>

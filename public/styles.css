@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root {
+:root {  /* variável de cor mais usadas para facilitar estilização */
     --rocket-color: #7159c1;
     --job-color: #F7DF1E;
 }
 
-* {
+* {  /*Tirando as config padrão do browser*/
     margin: 0;
     padding: 0;
     border: none;
@@ -21,14 +21,14 @@ header {
     width: 100%;
     padding: 32px;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box; /* levando todo o conteudo até o limite de 100% (width)*/
 }
 
 .links {
     font-size: 22px;
 }
 
-.links a + a {
+.links a + a { /* Apenas do 2o em diante (apenas o que tiver um "a" precedente) */
     margin-left: 32px;
 }
 
@@ -38,7 +38,7 @@ header {
     position: relative;
 }
 
-.links a.active {
+.links a.active { /* active entrando pelo JS */
     font-weight: bold;
     color: var(--rocket-color);
 
@@ -49,7 +49,7 @@ header {
 }
 
 .links a::after{
-    content: "";
+    content: ""; /* sempre precisa de content... podendo ser vazio */
     width: 0;
     height: 2px;
     background-color: var(--rocket-color);
@@ -58,10 +58,10 @@ header {
     bottom: -4px;
 }
 
-.links a:hover::after {
+.links a:hover::after {  /* quando cursor em cima ele inicia  */
     content: "";
     width: 100%;
-    transition: width 400ms ease-in-out;
+    transition: width 400ms ease-in-out; /* ease-in-out pre-det. de cubic-bezier*/
 } 
 
 /* ================ CARD ================ */
