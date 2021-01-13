@@ -6,6 +6,7 @@ const server = express() // criando um servidor, executando o express como funç
 
 //USE = middleware
 
+server.use(express.urlencoded({ extended: true })) // ojeto + propriendade responsáveis pelo funcionamento do req.body do routes
 server.use(express.static('public')) // express observando a pasta "public", para servir o arquivos estáticos
 server.use(routes) // habilitando o servidor para utilizar as rotas
 
