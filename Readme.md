@@ -1,6 +1,6 @@
 Conteúdo parcialmente reaproveitado do MODULO03
 
-instalado via npm nodemon, express, nunjucks, browsersync
+instalado via npm nodemon, express, nunjucks, browsersync e npm-run-all( para rodar todos junto)
 
 OBS**
 
