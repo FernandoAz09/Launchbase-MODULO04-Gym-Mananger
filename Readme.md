@@ -8,18 +8,18 @@
 - [Sobre](##sobre)
 - [Desenvolvimento](##desenvolvimento)
 - [Imagens](##imagens)
-- [Tecnologias/Libs](##tecnologias)
+- [Bibliotecas](##bibliotecas)
         
     
 ---
 
-## Sobre
+##Sobre<a name="sobre"></a>
 
 Atividade desenvolvida durante o Launchbase da Rocketseat, se trata de um controle de academia, onde temos instrutores e membros que podem ser cadastrados e também podem ter seus dados alterados.
 
 ---
 
-## Desenvolvimento
+## Desenvolvimento<a name="desenvolvimento"></a>
 
 A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o header no front-end com links para as rotas criadas.
 
@@ -29,7 +29,7 @@ Em seguida foi desenvolvida a página para cadastro de novo instrutor.
 
 ---
 
-## Imagens
+## Imagens<a name="imagens"></a>
 
 As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
 
@@ -39,7 +39,7 @@ As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
 
 ---
 
-## Bibliotecas 
+## Bibliotecas<a name="bibliotecas"></a> 
 
 O projeto foi desenvolvido utilizando as seguintes linguagens e bibliotecas:
   - JavaScript
