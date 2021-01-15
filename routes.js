@@ -1,5 +1,5 @@
 const express = require('express')
-const routes = express.Router() //express utiliza o método Router() que faz com que a variável seja responsável pelas rotas
+const routes = express.Router() // Express utiliza o método Router() que faz com que a variável seja responsável pelas rotas
 const instructors = require('./instructors')
 
 
@@ -15,8 +15,8 @@ routes.get('/instructors/create', function(rec, res) { // Rota de criação
     return res.render("instructors/create")
 })
 
-routes.get("/instructors/:id", instructors.show) //recebendo o id dentro do express
+routes.get("/instructors/:id", instructors.show) // Recebendo o id dentro do express
 
-routes.post("/instructors", instructors.post) //passando a function de outro arquivo e trazendo para o routes
+routes.post("/instructors", instructors.post) // Passando a function de outro arquivo e trazendo para o routes
 
-module.exports = routes //exportando as rotas
+module.exports = routes // Exportando as rotas
