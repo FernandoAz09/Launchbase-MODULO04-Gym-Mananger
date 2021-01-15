@@ -14,23 +14,23 @@
 
 ## Sobre
 
-### Atividade desenvolvida durante o Launchbase da Rocketseat, se trata de um controle de academia, onde temos instrutores e membros que podem ser cadastrados e também podem ter seus dados alterados.
+Atividade desenvolvida durante o Launchbase da Rocketseat, se trata de um controle de academia, onde temos instrutores e membros que podem ser cadastrados e também podem ter seus dados alterados.
 
 ---
 
 ## Desenvolvimento
 
-### A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o header no front-end com links para as rotas criadas.
+A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o header no front-end com links para as rotas criadas.
 
-### Em seguida, na rota Instructors foi criado um card contendo o avatar do professor e informações como nome, idade, sexo, data de filiação, modalidades que acompanha. As imagens que aparecem por enquanto são aleatórias tirdas do api da [Unsplash](https://source.unsplash.com/).
+Em seguida, na rota Instructors foi criado um card contendo o avatar do professor e informações como nome, idade, sexo, data de filiação, modalidades que acompanha. As imagens que aparecem por enquanto são aleatórias tirdas do api da [Unsplash](https://source.unsplash.com/).
 
-### Em seguida foi desenvolvida a página para cadastro de novo instrutor.
+Em seguida foi desenvolvida a página para cadastro de novo instrutor.
 
 ---
 
 ## Imagens
 
-### As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
+As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
 
 - [Unsplash](https://unsplash.com/)
 - [API da Unsplash](https://source.unsplash.com/)
@@ -38,17 +38,15 @@
 
 ---
 
-## Tecnologias Utilizadas
+## Bibliotecas 
 
-### O projeto foi desenvolvido utilizando as seguinte tecnologias:
- - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
- - [CSS3](https://www.w3schools.com/css/)
- - [Javascript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
- - [Node.js](https://nodejs.org/)
- - [Express](https://expressjs.com/)
- - [Nunjucks](https://mozilla.github.io/nunjucks/)
-
-
+O projeto foi desenvolvido utilizando as seguintes linguagens e bibliotecas:
+  - JavaScript
+  - Express
+  - Nodemon
+  - Nunjucks
+  - Utilizado BrowserSync e o npm-run-all (para facilitar o desenvolvimento e não precisar ficar restartando a todo o momento o servidor)
+  
 ---
 
 Curso: LaunchBase da [Rocketseat](https://rocketseat.com.br/)
