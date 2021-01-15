@@ -5,10 +5,10 @@
 
 # Índice
 
-- [Sobre](##sobre)
-- [Desenvolvimento](##desenvolvimento)
-- [Imagens](##imagens)
-- [Bibliotecas](##bibliotecas)
+- [Sobre](#sobre)
+- [Desenvolvimento](#desenvolvimento)
+- [Imagens](#imagens)
+- [Bibliotecas](#bibliotecas)
         
     
 ---
