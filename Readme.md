@@ -13,19 +13,19 @@
     
 ---
 
-##Sobre<a name="sobre"></a>
+## Sobre<a name="sobre"></a>
 
-Atividade desenvolvida durante o Launchbase da Rocketseat, se trata de um controle de academia, onde temos instrutores e membros que podem ser cadastrados e também podem ter seus dados alterados.
+Atividade desenvolvida durante o Bootcamp Launchbase da Rocketseat. Se trata de um Controle de Academia, onde temos instrutores e membros que podem ser cadastrados, visualizados e também podem ter seus dados alterados.
 
 ---
 
 ## Desenvolvimento<a name="desenvolvimento"></a>
 
-A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o header no front-end com links para as rotas criadas.
+A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o no front-end com links para as rotas criadas.
 
-Em seguida, na rota Instructors foi criado um card contendo o avatar do professor e informações como nome, idade, sexo, data de filiação, modalidades que acompanha. As imagens que aparecem por enquanto são aleatórias tirdas do api da [Unsplash](https://source.unsplash.com/).
+Na rota Instructors foi criado um card contendo o avatar do professor e informações como nome, idade, sexo, data de filiação, modalidades que acompanha. As imagens que aparecem por enquanto são aleatórias e consumidas via API da [Unsplash](https://source.unsplash.com/).
 
-Em seguida foi desenvolvida a página para cadastro de novo instrutor.
+Criados também formulários para serem preenchidos pelos novos instrutores, onde por meio de requisição adiciona os dados ao data.json.
 
 ---
 
