@@ -5,11 +5,12 @@
 
 # Índice
 
-- [Sobre](##-sobre)
-- [Desenvolvimento](##-desenvolvimento)
-- [Imagens](##-imagens)
-- [Tecnologias/Libs](##-tecnologias)
-
+- [Sobre](##sobre)
+- [Desenvolvimento](##desenvolvimento)
+- [Imagens](##imagens)
+- [Tecnologias/Libs](##tecnologias)
+        
+    
 ---
 
 ## Sobre
