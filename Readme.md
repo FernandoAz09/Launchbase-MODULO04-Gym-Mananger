@@ -1,9 +1,58 @@
-Conteúdo parcialmente reaproveitado do MODULO03
+<h1 align="center">
+  <img src ="https://camo.githubusercontent.com/268b1344409fac98c4eeda520482b6910c4ddcba/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f676f6c64656e2d77696e642f626f6f7463616d702d6c61756e6368626173652f6c6f676f2e706e67" />
+  <h2 align="center"> Controle de Academia </h2>
+<h1>
 
-instalado via npm nodemon, express, nunjucks, browsersync e npm-run-all( para rodar todos junto)
+# Índice
 
-OBS**
+- [Sobre](##-sobre)
+- [Desenvolvimento](##-desenvolvimento)
+- [Imagens](##-imagens)
+- [Tecnologias/Libs](##-tecnologias)
 
-Apenas guardando o conteúdo para fazer o Readme.md no final...
+---
 
-ESSA NÃO É A VERSÃO FINAL DO README.MD****************
+## Sobre
+
+### Atividade desenvolvida durante o Launchbase da Rocketseat, se trata de um controle de academia, onde temos instrutores e membros que podem ser cadastrados e também podem ter seus dados alterados.
+
+---
+
+## Desenvolvimento
+
+### A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o header no front-end com links para as rotas criadas.
+
+### Em seguida, na rota Instructors foi criado um card contendo o avatar do professor e informações como nome, idade, sexo, data de filiação, modalidades que acompanha. As imagens que aparecem por enquanto são aleatórias tirdas do api da [Unsplash](https://source.unsplash.com/).
+
+### Em seguida foi desenvolvida a página para cadastro de novo instrutor.
+
+---
+
+## Imagens
+
+### As imagens utilizadas neste projeto foram obtidas a partir das seguintes fontes:
+
+- [Unsplash](https://unsplash.com/)
+- [API da Unsplash](https://source.unsplash.com/)
+- [Collection da Unsplash](https://unsplash.com/collections/19035194/gym)
+
+---
+
+## Tecnologias Utilizadas
+
+### O projeto foi desenvolvido utilizando as seguinte tecnologias:
+ - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
+ - [CSS3](https://www.w3schools.com/css/)
+ - [Javascript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
+ - [Node.js](https://nodejs.org/)
+ - [Express](https://expressjs.com/)
+ - [Nunjucks](https://mozilla.github.io/nunjucks/)
+
+
+---
+
+Curso: LaunchBase da [Rocketseat](https://rocketseat.com.br/)
+
+---
+
+:triangular_flag_on_post: By [Fernando Azevedo](https://github.com/FernandoAz09)
