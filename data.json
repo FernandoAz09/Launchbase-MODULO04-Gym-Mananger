@@ -3,7 +3,7 @@
     {
       "id": 1,
       "avatar_url": "http://google.com",
-      "name": "Fernando dos Santos Azevedo",
+      "name": "Fernando",
       "birth": 684374400000,
       "gender": "M",
       "services": "Musculação, Crossfit, Natação",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "avatar_url": "http://google.com",
-      "name": "Fernando dos Santos Azevedo",
+      "name": "Fernando",
       "birth": 684374400000,
       "gender": "M",
       "services": "ok, ok",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "avatar_url": "http://google.com",
-      "name": "Rogério dos Santos",
+      "name": "Rogério",
       "birth": -698371200000,
       "gender": "M",
       "services": "ok, ok",
