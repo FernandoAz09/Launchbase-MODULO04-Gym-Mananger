@@ -1,5 +1,7 @@
 const fs = require('fs') // Módulo do Node.js **FILE SYSTEM trabalha com arquivos do sistema
 const data = require('./data.json')
+const { age } = require('./utils') // Objeto desestruturado e exportado 
+const Intl = require('intl') // Instalado para formatar a data conforme a região
 
 // req.query -> recebendo pela instrução da rota -> ?id=1
 // req.body -> recebendo a partir do corpo da requisição(form)
@@ -17,13 +19,12 @@ exports.show = function(req,res) {
 
     const instructor = { // Configurando os dados apresentados
         ...foudInstructor, // Os ajustes abaixo serão feitos e o restante ficara espalhado dentro do foundInstructors
-        age: "",
-        gender: "",
-        services: foudInstructor.services.split(","),
-        created_at: "",
+        age: age(foudInstructor.birth),
+        services: foudInstructor.services.split(", "),
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foudInstructor.created_at),
     }
 
-    return res.render("instructors/show", { instructor: foudInstructor}) // Renderizando os dados na página show.njk
+    return res.render("instructors/show", { instructor }) // Renderizando os dados na página show.njk
 }
 
 ////////////////////////        CREATE
@@ -46,8 +47,8 @@ exports.post = function(req, res) { //exportando apenas as functions
 
     /* --------------------- TRATAMENTO DOS DADOS --------------------- */
 
-    birth = Date.parse(birth) //Transformando e escrevendo as datas de nasc. em milissegundos 
-    const created_at = Date.now() // Adicionando e escrevendo a data de criação em milissegundos  
+    birth = Date.parse(birth) //Transformando e escrevendo as datas de nasc. em milissegundos <--TIMESTAMP
+    const created_at = Date.now() // Adicionando e escrevendo a data de criação em milissegundos <--TIMESTAMP
     const id = Number(data.instructors.length + 1) // Adicionando um ID numeral crescente ao instrutor
     
 
