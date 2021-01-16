@@ -6,7 +6,7 @@
       "name": "Fernando dos Santos Azevedo",
       "birth": 684374400000,
       "gender": "M",
-      "services": "ok, ok",
+      "services": "Musculação, Crossfit, Natação",
       "created_at": 1610733707828
     },
     {
@@ -35,6 +35,15 @@
       "gender": "M",
       "services": "ok, ok",
       "created_at": 1610734842953
+    },
+    {
+      "id": 5,
+      "avatar_url": "http://google.com",
+      "name": "Scarlet",
+      "birth": 743558400000,
+      "gender": "F",
+      "services": "musculaçao, crossfit",
+      "created_at": 1610809518547
     }
   ]
 }
