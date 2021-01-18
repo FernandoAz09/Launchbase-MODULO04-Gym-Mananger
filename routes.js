@@ -17,6 +17,19 @@ routes.get('/instructors/create', function(rec, res) { // Rota de criação
 
 routes.get("/instructors/:id", instructors.show) // Recebendo o id dentro do express
 
+routes.get("/instructors/:id/edit", instructors.edit)
+
+routes.put("/instructors", instructors.put)
+
 routes.post("/instructors", instructors.post) // Passando a function de outro arquivo e trazendo para o routes
 
 module.exports = routes // Exportando as rotas
+
+/* 
+    HTTP Verbs
+    GET = RECEBER RESOURCE(entidade, autenticação)
+    POST = CRIAR/SALVAR UM NOVO RESOURCE (com dados enviados)
+    PUT = ATUALIZAR UM RESOURCE (a partir dos dados salvos)
+    DELETE = DELETAR UM RESOURCE
+
+*/

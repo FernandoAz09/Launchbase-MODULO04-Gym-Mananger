@@ -1,8 +1,8 @@
 {% extends "layout.njk" %}    {# extendendo a formatação e estilização do layout para index #}
 
 {% block content %}
-
-<form class="card" method="POST" action="/instructors">
+                        {# HTML só aceita os verbos GET e POST #}
+<form class="card" method="POST" action="/instructors?_method=PUT"> {# SOBREESCREVENDO O MÉTODO e TROCANDO O VERBO DE POST PARA PUT#}
     <section 
     
     class="avatar" 
@@ -13,9 +13,14 @@
     
     <section class="details">
 
-        <h3>Novo Instrutor</h3>
+        <h3>Editar Instrutor</h3>
 
-        {% include "instructors/fields.njk" %} {#  Inclui arquivo externo dinâmicamente  #}
+     {% include "instructors/fields.njk" %} {#  Inclui arquivo externo dinâmicamente  #}
+
+        <input 
+            type="hidden" 
+            name="id" 
+            value="{{ instructor.id }}"> {# INPUT escondido para que o servidor encontre o ID #}
 
     </section>
 </form>

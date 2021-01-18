@@ -1,6 +1,8 @@
 const express = require("express") //importando a dependencia do express
 const nunjucks = require("nunjucks") // Template engine // reuso de códigos // 
 const routes = require('./routes') // Criando as rotas de fora do servidor pelo routes.js
+const methodOverride = require('method-override')
+
 
 const server = express() // criando um servidor, executando o express como função
 
@@ -8,6 +10,7 @@ const server = express() // criando um servidor, executando o express como funç
 
 server.use(express.urlencoded({ extended: true })) // ojeto + propriendade responsáveis pelo funcionamento do req.body do routes
 server.use(express.static('public')) // express observando a pasta "public", para servir o arquivos estáticos
+server.use(methodOverride('_method')) // Sobreescrever o tipo do método usado // Vindo antes da rota para funcionar
 server.use(routes) // habilitando o servidor para utilizar as rotas
 
 server.set("view engine", "njk") //Configurando a Template Engine //setando o motor de view para NJK (antes como HTML)

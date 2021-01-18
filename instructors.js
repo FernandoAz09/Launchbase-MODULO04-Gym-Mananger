@@ -1,13 +1,13 @@
 const fs = require('fs') // Módulo do Node.js **FILE SYSTEM trabalha com arquivos do sistema
 const data = require('./data.json')
-const { age } = require('./utils') // Objeto desestruturado e exportado 
+const { age, date } = require('./utils') // Objeto desestruturado e exportado 
 const Intl = require('intl') // Instalado para formatar a data conforme a região
 
 // req.query -> recebendo pela instrução da rota -> ?id=1
 // req.body -> recebendo a partir do corpo da requisição(form)
 // req.params-> recebendo pela instrução da rota -> /:id/:
 
-////////////////////////        SHOW
+// SHOW
 exports.show = function(req,res) { 
     const { id } = req.params // desestruturando, retirando o ID do req.params
 
@@ -27,7 +27,7 @@ exports.show = function(req,res) {
     return res.render("instructors/show", { instructor }) // Renderizando os dados na página show.njk
 }
 
-////////////////////////        CREATE
+// CREATE
 exports.post = function(req, res) { //exportando apenas as functions
 
     /* ------------------------------ ESTRUTURA DE VALIDAÇÃO ------------------------------*/
@@ -80,6 +80,54 @@ exports.post = function(req, res) { //exportando apenas as functions
 }
 
 
-////////////////////////        UPDATE
+// EDIT
 
-////////////////////////        DELETE
+exports.edit = function(req, res) {
+
+    const { id } = req.params // desestruturando, retirando o ID do req.params
+
+    const foudInstructor = data.instructors.find(function(instructor){ // Encontrando(com o find) o ID dentro de instructor
+        return instructor.id == id // FIND -> BOOLEAN
+    })
+
+    if (!foudInstructor) return res.send("Instructor not found!")
+    
+    const instructor = {
+        ...foudInstructor,
+        birth: date(foudInstructor.birth)
+    }
+
+    return res.render("instructors/edit", {instructor})  // Recebendo o id + usando o botão para editar os dados
+}
+
+// PUT
+exports.put = function(req, res) {
+    const { id } = req.body 
+    let index = 0
+
+
+    const foudInstructor = data.instructors.find(function(instructor, foundIndex){ // Encontrando(com o find) o ID dentro de instructor
+        if (id == instructor.id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if (!foudInstructor) return res.send("Instructor not found!")
+
+    const instructor = {
+        ...foudInstructor,
+        ...req.body,
+        birth: Date.parse(req.body.birth)
+    }
+
+    data.instructors[index] = instructor
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+        if (err) return res.send("Write error!")
+
+        return res.redirect(`/instructors/${id}`)
+    })
+}
+
+// DELETE
