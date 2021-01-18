@@ -48,6 +48,7 @@ O projeto foi desenvolvido utilizando as seguintes linguagens e bibliotecas:
   - Nunjucks
   - Intl (para correção de formato de data)
   - Utilizado BrowserSync e o npm-run-all (para facilitar o desenvolvimento e não precisar ficar restartando a todo o momento o servidor)
+  - Method Override (para sobreescrever o VERBO/método do HTML)
   
 ---
 
