@@ -1,67 +1,41 @@
 {
+  "members": [],
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "http://google.com",
-      "name": "Fernando",
+      "id": 7,
+      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/10632661_10207237102673487_7408236850423036683_n.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeE8euPE5A8zWif6w2nS5YAdTelv4Q_cCnVN6W_hD9wKdYrlfsQVhNhe4vsJ9ct8zfg&_nc_ohc=ZQ5e6xyl7o4AX_hFNMu&_nc_ht=scontent.fssz2-1.fna&oh=56487631023c26c3a5954f15eb0fc866&oe=602CF7B6",
+      "name": "Fernando Azevedo",
       "birth": 684374400000,
       "gender": "M",
-      "services": "Musculação, Crossfit, Natação",
-      "created_at": 1610733707828
+      "services": "Natação",
+      "created_at": 1610991234971
     },
     {
       "id": 2,
-      "avatar_url": "http://google.com",
-      "name": "Fernando",
-      "birth": 684374400000,
-      "gender": "M",
-      "services": "ok, ok",
-      "created_at": 1610733803923
-    },
-    {
-      "id": 3,
-      "avatar_url": "http://google.com",
-      "name": "MAYKE",
-      "birth": 684374400000,
-      "gender": "M",
-      "services": "ok, ok",
-      "created_at": 1610733707828
-    },
-    {
-      "id": 4,
-      "avatar_url": "http://google.com",
-      "name": "Rogério",
-      "birth": -698371200000,
-      "gender": "M",
-      "services": "ok, ok",
-      "created_at": 1610734842953
-    },
-    {
-      "id": "5",
-      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/130884648_3570719796350679_4758505372527187673_n.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeEjicNOlhuv-cwHO-QlXTTcL0B2ghLTqoMvQHaCEtOqg2op-u8zXY4du8UN6HedTT8&_nc_ohc=riZ5CG9z7NcAX89hrGc&_nc_ht=scontent.fssz2-1.fna&oh=2c4d2c8e808bf66d21c8ba8dd44df094&oe=602B195F",
-      "name": "Scarlet",
-      "birth": 743558400000,
-      "gender": "F",
-      "services": "musculaçao, crossfit",
-      "created_at": 1610809518547
-    },
-    {
-      "id": 6,
       "avatar_url": "https://avatars1.githubusercontent.com/u/56461093?s=460&u=addc42cd3200fb6216af5b923172787440c41e97&v=4",
       "name": "Fernando",
       "birth": 684374400000,
       "gender": "M",
-      "services": "Musculação, Crossfit, Natação, Spin",
-      "created_at": 1610988617697
+      "services": "Musculação, Natação",
+      "created_at": 1611152783815
     },
     {
-      "id": 7,
-      "avatar_url": "https://media-exp1.licdn.com/dms/image/C4E35AQHkAo_7OpuUEw/profile-framedphoto-shrink_100_100/0/1593090095488?e=1611079200&v=beta&t=rT43LWhVV2Ogy2WkvEQ5-RsYY2N5ajuDChFVotlk6AE",
-      "name": "Fernando Az",
-      "birth": 684374400000,
+      "id": 3,
+      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/130884648_3570719796350679_4758505372527187673_n.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeEjicNOlhuv-cwHO-QlXTTcL0B2ghLTqoMvQHaCEtOqg2op-u8zXY4du8UN6HedTT8&_nc_ohc=riZ5CG9z7NcAX89hrGc&_nc_ht=scontent.fssz2-1.fna&oh=2c4d2c8e808bf66d21c8ba8dd44df094&oe=602B195F",
+      "name": "Scarlet",
+      "birth": 743558400000,
+      "gender": "F",
+      "services": "Natação, Zumba",
+      "created_at": 1611152820613
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/120467549_3370336509722343_6212228092941176650_o.jpg?_nc_cat=105&ccb=2&_nc_sid=84a396&_nc_eui2=AeEvnqlE6wr6KK-0__gLjXfLYj57K41QN1BiPnsrjVA3UGiRbIuOaJMcJv2Hb_YfjnY&_nc_ohc=CzHRyRFIVHUAX_myuxM&_nc_ht=scontent.fssz2-1.fna&oh=d576ec0eb706aa084b5258f209194f98&oe=602BE9F5",
+      "name": "Bruce",
+      "birth": 1588291200000,
       "gender": "M",
-      "services": "musculação, crossfit",
-      "created_at": 1610991234971
+      "services": "Fitdance",
+      "created_at": 1611153063023
     }
   ]
 }

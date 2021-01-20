@@ -1,11 +1,22 @@
 const fs = require('fs') // Módulo do Node.js **FILE SYSTEM trabalha com arquivos do sistema
-const data = require('./data.json')
-const { age, date } = require('./utils') // Objeto desestruturado e exportado 
+const data = require('../data.json')
+const { age, date } = require('../utils') // Objeto desestruturado e exportado 
 const Intl = require('intl') // Instalado para formatar a data conforme a região
 
 // req.query -> recebendo pela instrução da rota -> ?id=1
 // req.body -> recebendo a partir do corpo da requisição(form)
 // req.params-> recebendo pela instrução da rota -> /:id/:
+
+
+// INDEX
+exports.index = function(req, res) {
+    return res.render("instructors/index", { instructors: data.instructors }) // renderizando a página inicial e trazendo os dados para a tabela
+}
+
+// CREATE
+exports.create = function(req, res) { // Rota de criação
+    return res.render("instructors/create")
+}
 
 // SHOW
 exports.show = function(req,res) { 
@@ -27,7 +38,7 @@ exports.show = function(req,res) {
     return res.render("instructors/show", { instructor }) // Renderizando os dados na página show.njk
 }
 
-// CREATE
+// POST
 exports.post = function(req, res) { //exportando apenas as functions
 
     /* ------------------------------ ESTRUTURA DE VALIDAÇÃO ------------------------------*/
@@ -79,9 +90,7 @@ exports.post = function(req, res) { //exportando apenas as functions
     // return res.send(req.body)
 }
 
-
 // EDIT
-
 exports.edit = function(req, res) {
 
     const { id } = req.params // desestruturando, retirando o ID do req.params
@@ -118,7 +127,8 @@ exports.put = function(req, res) {
     const instructor = {
         ...foudInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id)
     }
 
     data.instructors[index] = instructor
@@ -131,3 +141,18 @@ exports.put = function(req, res) {
 }
 
 // DELETE
+exports.delete = function(req,res) {
+    const { id } = req.body 
+
+    const filteredInstructors = data.instructors.filter(function(instructor) {
+        return instructor.id != id
+    })
+
+    data.instructors = filteredInstructors
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+        if(err) return res.send("Write file error!")
+
+        return res.redirect("/instructors")
+    })
+}
