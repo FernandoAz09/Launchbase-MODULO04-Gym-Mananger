@@ -2,14 +2,36 @@
   "members": [
     {
       "id": 1,
-      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/10632661_10207237102673487_7408236850423036683_n.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeE8euPE5A8zWif6w2nS5YAdTelv4Q_cCnVN6W_hD9wKdYrlfsQVhNhe4vsJ9ct8zfg&_nc_ohc=ZQ5e6xyl7o4AX_hFNMu&_nc_ht=scontent.fssz2-1.fna&oh=56487631023c26c3a5954f15eb0fc866&oe=602CF7B6",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/56461093?s=460&u=addc42cd3200fb6216af5b923172787440c41e97&v=4",
       "name": "Fernando dos Santos Azevedo",
       "email": "fsazevedo09@gmail.com",
-      "birth": 685929600000,
+      "birth": 684374400000,
       "gender": "M",
-      "blood": "AB0",
-      "weight": "104",
+      "blood": "A +",
+      "weight": "107",
       "height": "174"
+    },
+    {
+      "id": "[object Object]1",
+      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/120467549_3370336509722343_6212228092941176650_o.jpg?_nc_cat=105&ccb=2&_nc_sid=84a396&_nc_eui2=AeEvnqlE6wr6KK-0__gLjXfLYj57K41QN1BiPnsrjVA3UGiRbIuOaJMcJv2Hb_YfjnY&_nc_ohc=CzHRyRFIVHUAX_myuxM&_nc_ht=scontent.fssz2-1.fna&oh=d576ec0eb706aa084b5258f209194f98&oe=602BE9F5",
+      "name": "Bruce",
+      "email": "fernando_litoral@hotmail.com",
+      "birth": 684374400000,
+      "gender": "M",
+      "blood": "O +",
+      "weight": "3",
+      "height": "20"
+    },
+    {
+      "id": "[object Object]1",
+      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/120467549_3370336509722343_6212228092941176650_o.jpg?_nc_cat=105&ccb=2&_nc_sid=84a396&_nc_eui2=AeEvnqlE6wr6KK-0__gLjXfLYj57K41QN1BiPnsrjVA3UGiRbIuOaJMcJv2Hb_YfjnY&_nc_ohc=CzHRyRFIVHUAX_myuxM&_nc_ht=scontent.fssz2-1.fna&oh=d576ec0eb706aa084b5258f209194f98&oe=602BE9F5",
+      "name": "Eu",
+      "email": "fernando_litoral@hotmail.com",
+      "birth": 113142355200000,
+      "gender": "M",
+      "blood": "A1",
+      "weight": "23123",
+      "height": "123123"
     }
   ],
   "instructors": [

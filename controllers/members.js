@@ -88,21 +88,21 @@ exports.show = function(req,res) {
 // EDIT
 
 exports.edit = function(req, res) {
+    // req.params
+    const { id } = req.params
 
-    const { id } = req.params 
-
-    const foudMember = data.members.find(function(member){ 
-        return member.id == id 
+    const foundMember = data.members.find(function(member) {
+        return  id == member.id
     })
 
-    if (!foudMember) return res.send("Member not found!")
-    
+    if(!foundMember) return res.send('Member not found!')
+
     const member = {
-        ...foudMember,
-        birth: date(foudMember.birth).iso
+        ...foundMember,
+        birth: date(foundMember.birth).iso
     }
 
-    return res.render("members/edit", {member})  
+    return res.render('members/edit', { member })
 }
 
 // PUT
