@@ -21,12 +21,7 @@ Atividade desenvolvida durante o Bootcamp Launchbase da Rocketseat. Se trata de 
 
 ## Desenvolvimento<a name="desenvolvimento"></a>
 
-A primeira parte consistiu em criar as rotas (instructores e members) no back-end e o no front-end com links para as rotas criadas.
-
-Na rota Instructors foi criado um card contendo o avatar do professor e informações como nome, idade, sexo, data de filiação, modalidades que acompanha. As imagens que aparecem por enquanto são aleatórias e consumidas via API da [Unsplash](https://source.unsplash.com/).
-
-Criados também formulários para serem preenchidos pelos novos instrutores, onde por meio de requisição adiciona os dados ao data.json.
-
+Em desenvolvimento...
 ---
 
 ## Imagens<a name="imagens"></a>
