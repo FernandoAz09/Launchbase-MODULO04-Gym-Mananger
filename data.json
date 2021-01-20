@@ -1,5 +1,17 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://scontent.fssz2-1.fna.fbcdn.net/v/t1.0-9/10632661_10207237102673487_7408236850423036683_n.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeE8euPE5A8zWif6w2nS5YAdTelv4Q_cCnVN6W_hD9wKdYrlfsQVhNhe4vsJ9ct8zfg&_nc_ohc=ZQ5e6xyl7o4AX_hFNMu&_nc_ht=scontent.fssz2-1.fna&oh=56487631023c26c3a5954f15eb0fc866&oe=602CF7B6",
+      "name": "Fernando dos Santos Azevedo",
+      "email": "fsazevedo09@gmail.com",
+      "birth": 685929600000,
+      "gender": "M",
+      "blood": "AB0",
+      "weight": "104",
+      "height": "174"
+    }
+  ],
   "instructors": [
     {
       "id": 1,

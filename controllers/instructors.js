@@ -103,7 +103,7 @@ exports.edit = function(req, res) {
     
     const instructor = {
         ...foudInstructor,
-        birth: date(foudInstructor.birth)
+        birth: date(foudInstructor.birth).iso
     }
 
     return res.render("instructors/edit", {instructor})  // Recebendo o id + usando o botão para editar os dados

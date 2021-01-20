@@ -3,6 +3,7 @@
 {% block content %}
 
 <div class="card table-container">
+    <a href="/members/create">Novo</a>
     <table width="100%">
         <thead>
             <tr>
@@ -13,14 +14,14 @@
         </thead>
         <tbody>
 {# TRAZENDO DINÂMICAMENTE OS DADOS PARA PREENCHER A TABELA #}
-            {% for instructor in instructors %} 
+            {% for member in members %} 
                 <tr>
                     <td>
-                        <span style="background-image: url({{instructor.avatar_url}})"></span>
-                        {{ instructor.name }}
+                        <span style="background-image: url({{member.avatar_url}})"></span>
+                        {{ member.name }}
                     </td>
-                    <td>{{ instructor.services }}</td>
-                    <td><a href="/instructors/{{instructor.id}}">VER</a></td> {# Botão que leva direto para o card do Instrutor #}
+                    <td>{{ member.services }}</td>
+                    <td><a href="/members/{{member.id}}">VER</a></td> {# Botão que leva direto para o card do Instrutor #}
                 </tr>
             {% endfor %}
         </tbody>

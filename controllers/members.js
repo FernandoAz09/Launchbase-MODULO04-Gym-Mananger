@@ -1,30 +1,12 @@
 const fs = require('fs') 
 const data = require('../data.json')
-const { age, date } = require('../utils') 
+const { date } = require('../utils') 
 const Intl = require('intl')
 
 
-
+// INDEX
 exports.index = function(req, res) {
     return res.render("members/index", { members: data.members })
-}
-
-// SHOW
-exports.show = function(req,res) { 
-    const { id } = req.params 
-
-    const foudMember = data.members.find(function(member){ 
-        return member.id == id 
-    })
-
-    if (!foudMember) return res.send("Member not found!")
-
-    const member = { 
-        ...foudMember, 
-        age: age(foudMember.birth),
-    }
-
-    return res.render("members/show", { member }) 
 }
 
 // CREATE
@@ -35,39 +17,74 @@ exports.create = function(req, res) {
 
 // POST
 exports.post = function(req, res) { 
-
+    
     const keys = Object.keys(req.body)
-
+    
     for(key of keys) { 
         if(req.body[key] == "") { 
             return res.send('Por favor, preencha todos os campos.') 
         }
     }
     
-    let {avatar_url, name, birth, gender, services} = req.body 
+    birth = Date.parse(req.body.birth)
     
-    birth = Date.parse(birth) 
-    const created_at = Date.now() 
-    const id = Number(data.members.length + 1) 
+    let id = 1
+    const lastMember = data.members[data.members.length - 1]
+    if (lastMember) {
+        id = lastMember +1
+    }
     
     data.members.push({
         id,
-        avatar_url,
-        name,
-        birth,
-        gender,
-        services,
-        created_at
+        ...req.body,
+        birth
     }) 
     
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){ 
         if (err) return res.send("Write file error.") 
-
-        return res.redirect("/members")
+        
+        return res.redirect(`/members/${id}`)
     })
-
+    
 }
 
+// SHOW
+exports.show = function(req,res) { 
+    const { id } = req.params 
+
+    const foudMember = data.members.find(function(member){ 
+        return member.id == id 
+    })
+
+    const converterBlood = data.members.find(function(member) {
+        if ('A1' == member.blood) {
+            member.blood = 'A +'
+        } else if ('A0' == member.blood) {
+            member.blood = 'A -'
+        } else if ('B1' == member.blood) {
+            member.blood = 'B +'
+        } else if ('B2' == member.blood) {
+            member.blood = 'B -'
+        } else if ('AB1' == member.blood) {
+            member.blood = 'AB +'
+        } else if ('AB0' == member.blood) {
+                member.blood = 'AB -'
+        } else if ('O1' == member.blood) {
+            member.blood = 'O +'
+        } else if ('O0' == member.blood) {
+            member.blood = 'O -'
+        } 
+    })
+
+    if (!foudMember) return res.send("Member not found!")
+
+    const member = { 
+        ...foudMember, 
+        birth: date(foudMember.birth).birthDay
+    }
+
+    return res.render("members/show", { member }) 
+}
 // EDIT
 
 exports.edit = function(req, res) {
@@ -82,7 +99,7 @@ exports.edit = function(req, res) {
     
     const member = {
         ...foudMember,
-        birth: date(foudMember.birth)
+        birth: date(foudMember.birth).iso
     }
 
     return res.render("members/edit", {member})  
